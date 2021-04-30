@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using XtremaxInterviewWebApp.Data.DataModels;
 
 namespace XtremaxInterviewWebApp.Data
 {
@@ -12,5 +13,8 @@ namespace XtremaxInterviewWebApp.Data
             : base(options)
         {
         }
+
+        public DbSet<Status> Statuses { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
