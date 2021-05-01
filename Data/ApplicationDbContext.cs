@@ -16,5 +16,7 @@ namespace XtremaxInterviewWebApp.Data
 
         public DbSet<Status> Statuses { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+
     }
 }
